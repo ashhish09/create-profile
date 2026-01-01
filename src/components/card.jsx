@@ -2,7 +2,7 @@ import "./card.css";
 
 const card = (props) => {
   return (
-    <div className="cards">
+    <div className="card">
       <img
         src={props.pictureURL}
         alt={props.Username}
