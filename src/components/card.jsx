@@ -9,10 +9,10 @@ const card = (props) => {
         className="profile-img"
       />
 
-      <h2 className="username">{props.Username}</h2>
-      <p className="email">{props.Email}</p>
+      <h2 className="username">{props.Username || "Username"}</h2>
+      <p className="email">{props.Email || "Email"}</p>
 
-      <p className="info">{props.information}</p>
+      <p className="info">{props.information || "Information"}</p>
 
       <button className="btn" onClick={() => props.deletehandler(props.index)}>
         Delete Profile
